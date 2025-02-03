@@ -1,0 +1,15 @@
+<!-- views/home.ejs -->
+<%- include('partials/header', { title: homeData.title }) %>
+
+    <section class="home-section">
+        <div class="container">
+            <h1>Hoş Geldiniz!</h1>
+            <p>
+                Request Time: <%= homeData.requestTime %>,
+                Response Time: <%= homeData.requestTime %>,
+                Difference: <%= homeData.difference %>
+            </p>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>

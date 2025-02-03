@@ -1,0 +1,21 @@
+<!-- Header partial'ını dahil et -->
+<%- include('partials/header', { title: aboutData.title }) %>
+
+    <section class="about-section">
+        <h2>Hakkımda</h2>
+        <p>
+            <%= aboutData.bio %>
+        </p>
+
+        <h3>Becerilerim</h3>
+        <ul>
+            <% aboutData.skills.forEach(skill=> { %>
+                <li>
+                    <%= skill %>
+                </li>
+                <% }); %>
+        </ul>
+    </section>
+
+    <!-- Footer partial'ını dahil et -->
+    <%- include('partials/footer') %>
