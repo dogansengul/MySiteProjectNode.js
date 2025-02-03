@@ -16,5 +16,8 @@
     "url": "https://github.com/dogansengul/PCATnode.js/issues"
   },
   "homepage": "https://github.com/dogansengul/PCATnode.js#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "3.4.2"
+  }
 }
