@@ -12,6 +12,7 @@ body {
     /* Açık mavi tonlu arka plan */
     color: #333;
     line-height: 1.6;
+    height: 100%;
 }
 
 /* Header & Navigation */
@@ -62,10 +63,53 @@ main {
     margin: 0 auto;
 }
 
-/* Section Container */
+/* Container */
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Form stilleri */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #357ABD;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #357ABD;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4a90e2;
 }
 
 /* Home Section */
@@ -124,4 +168,60 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
+
+html {
+    height: 100%;
+}
+
+.photo-gallery-section {
+    /* Arkaplan, spacing gibi genel stiller ekleyebilirsiniz */
+    padding: 20px;
+}
+
+.photo-gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    /* İçerik taşınca yatay kaydırma devreye girer */
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    /* İsteğe bağlı daha şık kaydırma efekti */
+}
+
+.photo-card {
+    flex: 0 0 auto;
+    width: 300px;
+    /* Kartın genişliğini artırırsanız foto da büyür */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.photo-card img {
+    width: 100%;
+    /* Kart genişliğini kullan; otomatik ölçeklensin */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.photo-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.photo-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+

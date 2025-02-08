@@ -6,9 +6,26 @@
             <h1>Hoş Geldiniz!</h1>
             <p>
                 Request Time: <%= homeData.requestTime %>,
-                Response Time: <%= homeData.requestTime %>,
-                Difference: <%= homeData.difference %>
+                    Response Time: <%= homeData.responseTime %>,
+                        Difference: <%= homeData.difference %>
             </p>
+        </div>
+    </section>
+
+    <section class="photo-gallery-section">
+        <div class="photo-gallery-container">
+            <% photos.forEach(photo=> { %>
+                <div class="photo-card">
+                    <img src="<%= photo.image %>" alt="<%= photo.title %>" />
+                    <h3>
+                        <%= photo.title %>
+                    </h3>
+                    <p>
+                        <%= photo.description %>
+                    </p>
+                </div>
+                <% }) %>
+
         </div>
     </section>
 

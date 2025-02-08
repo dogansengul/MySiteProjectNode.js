@@ -1,0 +1,53 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        /* Basit bir görünüm */
+        body {
+            font-family: sans-serif;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: #008CBA;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007B9A;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <h2>Yönetim Paneli Girişi</h2>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="password">Şifre</label>
+        <input type="password" name="password" id="password" required />
+
+        <button type="submit">Giriş Yap</button>
+    </form>
+</body>
+
+</html>
