@@ -24,12 +24,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 router.get('/addphoto', isAdmin, (req, res) => {
-    // Admin kontrolü ekleyebilirsin (örn: oturum doğrulama), burada örneğe dahil edilmedi.
     res.render('addphoto', { title: 'Fotoğraf Ekle' });
-});
-
-router.post('/addphoto', isAdmin, (req, res) => {
-    // Admin kontrolü ekleyebilirsin (örn: oturum doğrulama), burada örneğe dahil edilmedi.
 });
 
 router.post(
